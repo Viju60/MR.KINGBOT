@@ -285,4 +285,15 @@ async def lego(event):
     if os.path.exists(fname):
             os.remove(fname)
  except Exception as e:
-    await event.reply(f'Error, Report @{SUPPORT_CHAT}, {e}')
+    await event.reply(f'Error, Report @VkTgBotSupport, {e}')
+
+file_help = os.path.basename(__file__)
+file_help = file_help.replace(".py", "")
+file_helpo = file_help.replace("_", " ")
+
+
+__help__ = """
+ ❍ /logo text :  Create your logo with your name
+
+ """
+__mod_name__ = "Logo"
